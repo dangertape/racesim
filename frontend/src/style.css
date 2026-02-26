@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply text-sm text-track-muted hover:text-white transition-colors;
+  }
+  .btn {
+    @apply px-4 py-2 rounded text-sm font-semibold transition-colors disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+  .btn-primary {
+    @apply btn bg-track-accent text-black hover:brightness-110;
+  }
+  .btn-ghost {
+    @apply btn border border-track-border text-track-muted hover:text-white hover:border-white;
+  }
+  .btn-danger {
+    @apply btn border border-red-800 text-red-400 hover:bg-red-900/30;
+  }
+  .card {
+    @apply bg-track-panel border border-track-border rounded-lg p-4;
+  }
+  .badge {
+    @apply inline-block px-2 py-0.5 rounded text-xs font-semibold;
+  }
+  .badge-sprint       { @apply badge bg-orange-900/50 text-orange-300; }
+  .badge-endurance    { @apply badge bg-blue-900/50 text-blue-300; }
+  .badge-time_trial   { @apply badge bg-purple-900/50 text-purple-300; }
+  .badge-wet_track    { @apply badge bg-cyan-900/50 text-cyan-300; }
+  .badge-night_race   { @apply badge bg-indigo-900/50 text-indigo-300; }
+  .badge-altitude     { @apply badge bg-teal-900/50 text-teal-300; }
+  .badge-spec_class   { @apply badge bg-yellow-900/50 text-yellow-300; }
+  .badge-weight_limit { @apply badge bg-red-900/50 text-red-300; }
+  .badge-open     { @apply badge bg-green-900/50 text-green-300; }
+  .badge-locked   { @apply badge bg-yellow-900/50 text-yellow-300; }
+  .badge-running  { @apply badge bg-blue-900/50 text-blue-300; }
+  .badge-finished { @apply badge bg-gray-700 text-gray-300; }
+  .badge-upcoming { @apply badge bg-gray-800 text-gray-400; }
+  .slot-card {
+    @apply card flex flex-col gap-2;
+  }
+  .readiness-bar-bg {
+    @apply w-full h-2 bg-track-border rounded-full overflow-hidden;
+  }
+  .readiness-bar {
+    @apply h-full rounded-full transition-all;
+  }
+}

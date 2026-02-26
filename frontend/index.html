@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CarRacingSim</title>
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="h-full bg-track-bg text-white font-mono">
+
+  <!-- Top nav -->
+  <nav id="nav" class="hidden border-b border-track-border bg-track-panel px-6 py-3 flex items-center gap-6">
+    <span class="text-track-accent font-bold tracking-widest text-sm uppercase">CarRacingSim</span>
+    <a href="#/schedule" class="nav-link">Schedule</a>
+    <a href="#/garage"   class="nav-link">Garage</a>
+    <div class="ml-auto flex items-center gap-4">
+      <span id="nav-credits" class="text-track-muted text-xs"></span>
+      <button id="nav-logout" class="text-xs text-track-muted hover:text-white">Logout</button>
+    </div>
+  </nav>
+
+  <!-- Main content -->
+  <main id="app" class="p-6 max-w-5xl mx-auto"></main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
