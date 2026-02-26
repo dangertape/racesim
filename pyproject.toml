@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "carracingsim"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi>=0.111.0",
+    "uvicorn[standard]>=0.30.0",
+    "PyJWT>=2.8.0",
+    "bcrypt>=4.0.0",
+    "apscheduler>=3.10.4",
+    "python-multipart>=0.0.9",
+    "pydantic>=2.7.0",
+]
+
+[project.optional-dependencies]
+dev = ["httpx", "pytest", "pytest-asyncio"]
+
+[tool.setuptools.packages.find]
+include = ["backend*"]
